@@ -1,0 +1,35 @@
+/**
+ * Created by Катя on 14.12.2015.
+ */
+public class Directoria {
+    public static void main (string [] args){
+        system.out.println("Class of files");
+        TextFile = new t TextFile();
+        AudioFile = new a AudioFile();
+        ImageFile = new i ImageFile();
+
+
+    }
+}
+
+public abstract class File {
+    int ItsSize;
+    int last_changes;
+    char ItsType;
+
+    public abstract int getPath();
+    public abstract bool canRead() ;
+    public abstract  bool canWrite() ;
+    public abstract bool exists() ;
+    public abstract string getName() ;
+    public abstract void delete();
+}
+
+public class TextFile extends File {
+}
+
+public class AudioFile extends File {
+}
+
+public class ImageFile extends File {
+}
